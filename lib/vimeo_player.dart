@@ -38,7 +38,7 @@ class VimeoPlayer extends StatelessWidget {
              </head>
              <body>
                 <iframe 
-                src="https://player.vimeo.com/video/${this.videoId}?loop=0&autoplay=0" 
+                src="https://player.vimeo.com/video/$videoId?loop=0&autoplay=0" 
                 width="100%" height="100%" frameborder="0" allow="fullscreen" 
                 allowfullscreen></iframe>
              </body>

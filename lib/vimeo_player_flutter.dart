@@ -1,4 +1,4 @@
-library vimeo_player;
+library vimeo_player_flutter;
 
 import 'dart:convert';
 

@@ -1,6 +1,6 @@
-# vimeo_player pugin
+# vimeo_player_flutter pugin
 
-vimeo_player plugin provides vimeo player Flutter widget based on the webview_flutter plugin.
+vimeo_player_flutter plugin provides vimeo player Flutter widget based on the webview_flutter plugin.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  vimeo_player: ^0.0.2
+  vimeo_player_flutter: ^0.0.2
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ dependencies:
 Then you just have to import the package with
 
 ```dart
-import 'import package:vimeo_player/vimeo_player.dart'
+import 'import package:vimeo_player_flutter/vimeo_player_flutter.dart'
 ```
 
 ## Example

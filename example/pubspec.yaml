@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  vimeo_player:
+  vimeo_player_flutter:
     path: ../
 
 

@@ -1,7 +1,6 @@
-name: vimeo_player
+name: vimeo_player_flutter
 description: Vimeo Player Flutter package.
-version: 0.0.1
-author: Prabhanu Gunaweera(prahack)
+version: 0.0.2
 homepage: https://github.com/prahack/vimeo_player
 
 environment:

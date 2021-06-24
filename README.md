@@ -1,4 +1,4 @@
-# vimeo_player_flutter pugin
+# vimeo_player_flutter plugin
 
 vimeo_player_flutter plugin provides vimeo player Flutter widget based on the webview_flutter plugin.
 

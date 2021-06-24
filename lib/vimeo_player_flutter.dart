@@ -5,12 +5,23 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+///vimeo player for Flutter apps
+///Flutter plugin based on the [webview_flutter] plugin
+///[videoId] is the only required field to use this plugin
+///
+///
+///
+///
 class VimeoPlayer extends StatelessWidget {
   final String videoId;
 
+  ///constructor
+  ///
+  ///
+  ///
   const VimeoPlayer({
-    Key key,
-    this.videoId,
+    Key? key,
+    required this.videoId,
   }) : super(key: key);
 
   @override
@@ -21,6 +32,11 @@ class VimeoPlayer extends StatelessWidget {
     );
   }
 
+  ///web page containing iframe of the vimeo video
+  ///
+  ///
+  ///
+  ///
   String _videoPage(String videoId) {
     final html = '''
             <html>

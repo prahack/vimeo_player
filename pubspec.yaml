@@ -1,6 +1,6 @@
 name: vimeo_player_flutter
-description: Vimeo Player Flutter package.
-version: 0.0.3
+description: Vimeo Player Flutter package for Flutter apps. Compatible with both iOS and Android platforms.
+version: 0.0.3+1
 homepage: https://github.com/prahack/vimeo_player
 
 environment:

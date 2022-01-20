@@ -16,7 +16,7 @@ dependencies:
 Then you just have to import the package with
 
 ```dart
-import 'import package:vimeo_player_flutter/vimeo_player_flutter.dart'
+import 'package:vimeo_player_flutter/vimeo_player_flutter.dart';
 ```
 
 ## Example

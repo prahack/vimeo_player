@@ -1,3 +1,8 @@
+## [0.0.3+2] - 30/01/2022.
+
+* fix typo in `README.md`
+* Support up-to-date dependencies(`webview_flutter 3.0.0`)
+
 ## [0.0.3+1] - 16/06/2021.
 
 * dartdoc comments

@@ -29,6 +29,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String videoId = '70591644';
+  String videoH = 'b8c796fff8';
 
   @override
   Widget build(BuildContext context) {
@@ -43,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 250,
               child: VimeoPlayer(
                 videoId: videoId,
+                videoH: videoH,
               ),
             ),
           ],

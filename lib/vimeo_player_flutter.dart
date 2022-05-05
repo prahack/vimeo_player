@@ -8,12 +8,13 @@ import 'package:webview_flutter/webview_flutter.dart';
 ///vimeo player for Flutter apps
 ///Flutter plugin based on the [webview_flutter] plugin
 ///[videoId] is the only required field to use this plugin
-///
+///[videoH] is now required
 ///
 ///
 ///
 class VimeoPlayer extends StatelessWidget {
   final String videoId;
+  final String videoH;
 
   ///constructor
   ///
@@ -22,12 +23,13 @@ class VimeoPlayer extends StatelessWidget {
   const VimeoPlayer({
     Key? key,
     required this.videoId,
+    required this.videoH,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return WebView(
-      initialUrl: _videoPage(this.videoId),
+      initialUrl: _videoPage(this.videoId, this.videoH),
       javascriptMode: JavascriptMode.unrestricted,
     );
   }
@@ -37,7 +39,7 @@ class VimeoPlayer extends StatelessWidget {
   ///
   ///
   ///
-  String _videoPage(String videoId) {
+  String _videoPage(String videoId, String videoH) {
     final html = '''
             <html>
               <head>
@@ -54,7 +56,7 @@ class VimeoPlayer extends StatelessWidget {
              </head>
              <body>
                 <iframe 
-                src="https://player.vimeo.com/video/$videoId?loop=0&autoplay=0" 
+                src="https://player.vimeo.com/video/$videoId?h=$videoH?loop=0&autoplay=0" 
                 width="100%" height="100%" frameborder="0" allow="fullscreen" 
                 allowfullscreen></iframe>
              </body>

@@ -12,23 +12,34 @@ import 'package:webview_flutter/webview_flutter.dart';
 ///
 ///
 ///
-class VimeoPlayer extends StatelessWidget {
-  final String videoId;
-
-  ///constructor
-  ///
-  ///
-  ///
+class VimeoPlayer extends StatefulWidget {
   const VimeoPlayer({
     Key? key,
     required this.videoId,
   }) : super(key: key);
 
+  final String videoId;
+
+  @override
+  State<VimeoPlayer> createState() => _VimeoPlayerState();
+}
+
+class _VimeoPlayerState extends State<VimeoPlayer> {
+  final _controller = WebViewController();
+
+  @override
+  void initState() {
+
+    _controller
+      ..loadRequest(_videoPage(widget.videoId))
+      ..setJavaScriptMode(JavaScriptMode.unrestricted);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: _videoPage(this.videoId),
-      javascriptMode: JavascriptMode.unrestricted,
+    return WebViewWidget(
+    controller: _controller,
     );
   }
 
@@ -37,7 +48,7 @@ class VimeoPlayer extends StatelessWidget {
   ///
   ///
   ///
-  String _videoPage(String videoId) {
+  Uri _videoPage(String videoId) {
     final html = '''
             <html>
               <head>
@@ -62,6 +73,6 @@ class VimeoPlayer extends StatelessWidget {
             ''';
     final String contentBase64 =
         base64Encode(const Utf8Encoder().convert(html));
-    return 'data:text/html;base64,$contentBase64';
+    return Uri.parse('data:text/html;base64,$contentBase64');
   }
 }

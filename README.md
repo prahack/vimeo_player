@@ -8,7 +8,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  vimeo_player_flutter: ^0.0.3+2
+  vimeo_player_flutter: ^0.1.0
 ```
 
 ## Usage

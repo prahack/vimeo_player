@@ -29,7 +29,6 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
 
   @override
   void initState() {
-
     _controller
       ..loadRequest(_videoPage(widget.videoId))
       ..setJavaScriptMode(JavaScriptMode.unrestricted);
@@ -39,7 +38,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
   @override
   Widget build(BuildContext context) {
     return WebViewWidget(
-    controller: _controller,
+      controller: _controller,
     );
   }
 

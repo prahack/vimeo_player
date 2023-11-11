@@ -1,3 +1,7 @@
+## [0.1.0] - 10/11/2022.
+
+* Support up-to-date dependencies(`webview_flutter 4.4.2`)
+
 ## [0.0.3+2] - 30/01/2022.
 
 * fix typo in `README.md`
